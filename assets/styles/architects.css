@@ -1,0 +1,39 @@
+/* define all possible color */
+:root {
+    --primary-color: #FF900E;
+    --white: #FFFFFF;
+    --bg-color: rgba(255, 144, 14, 0.1);; /* opacity 10% */
+    --dark-1: #131313;
+    --dark-2: #424242;
+    --dark-3: #727272;
+    --dark-4: #A1A1A1;
+    --dark-5: #D0D0D0;
+    --dark-6: #E7E7E7;
+    --dark-7: #F3F3F3;
+
+}
+
+/* -----------------------------------------
+        universal styles / utilities --start--
+-------------------------------------------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Work Sans', sans-serif;
+    font-style: normal;
+    font-size: 16px;
+    font-weight: 400;
+}
+.container {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+
+/* -----------------------------------------
+        universal styles / utilities --end--
+-------------------------------------------- */

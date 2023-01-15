@@ -1,39 +1,96 @@
 /* define all possible color */
 :root {
-    --primary-color: #FF900E;
-    --white: #FFFFFF;
-    --bg-color: rgba(255, 144, 14, 0.1);; /* opacity 10% */
-    --dark-1: #131313;
-    --dark-2: #424242;
-    --dark-3: #727272;
-    --dark-4: #A1A1A1;
-    --dark-5: #D0D0D0;
-    --dark-6: #E7E7E7;
-    --dark-7: #F3F3F3;
-
+  --primary-color: #ff900e;
+  --white: #ffffff;
+  --bg-color: rgba(255, 144, 14, 0.1); /* opacity 10% */
+  --dark-1: #131313;
+  --dark-2: #424242;
+  --dark-3: #727272;
+  --dark-4: #a1a1a1;
+  --dark-5: #d0d0d0;
+  --dark-6: #e7e7e7;
+  --dark-7: #f3f3f3;
 }
 
 /* -----------------------------------------
         universal styles / utilities --start--
 -------------------------------------------- */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 body {
-    font-family: 'Work Sans', sans-serif;
-    font-style: normal;
-    font-size: 16px;
-    font-weight: 400;
+  font-family: "Work Sans", sans-serif;
+  font-style: normal;
+  font-size: 16px;
+  font-weight: 400;
 }
 .container {
-    width: 100%;
-    max-width: 1440px;
-    margin: 0 auto;
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 15px;
 }
-
 
 /* -----------------------------------------
         universal styles / utilities --end--
+-------------------------------------------- */
+
+/* -----------------------------------------
+        Header styles --start--
+-------------------------------------------- */
+
+.header-area {
+  background-color: var(--bg-color);
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 50px;
+  padding-bottom: 100px;
+}
+.menu {
+  display: flex;
+  gap: 40px;
+}
+.site-title {
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 53px;
+  color: var(--dark-1);
+}
+.menu li {
+  list-style-type: none;
+}
+.menu li a {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 26px;
+  color: var(--dark-2);
+}
+
+/* -----------------------------------------
+         Header styles --end--
+-------------------------------------------- */
+
+
+
+/* -----------------------------------------
+         Responsive area --start--
+-------------------------------------------- */
+/* for mobile device max-width: 576px or less */
+@media only screen and (max-width: 576px), (max-width: 768px){
+    .navbar {
+        flex-direction: column;
+        row-gap: 15px;
+    }
+}
+
+
+
+/* -----------------------------------------
+         Responsive area --end--
 -------------------------------------------- */

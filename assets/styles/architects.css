@@ -258,6 +258,40 @@ body {
          some facts-section --end--
 -------------------------------------------- */
 
+
+/* -----------------------------------------
+         our sponsors-section --start--
+-------------------------------------------- */
+.sponsors-content {
+    width: 100%;
+    max-width: 540px;
+    margin: 0 auto;
+    text-align: center;
+}
+.sponsors {
+    margin-top: 50px;
+    margin-bottom: 130px;
+    display: flex;
+    justify-content: space-between;
+}
+.sponsors img {
+    width: 100%;
+    filter: grayscale(1);
+    transition: 0.2s;
+    cursor: pointer;
+}
+.sponsors img:hover {
+    filter: grayscale(0);
+    margin-top: -5px;
+}
+
+
+
+
+/* -----------------------------------------
+         ours sponsors section --end--
+-------------------------------------------- */
+
 /* -----------------------------------------
          Responsive area --start--
 -------------------------------------------- */
@@ -319,6 +353,13 @@ body {
     gap: 50px;
     margin-top: 50px;
     margin-bottom: 100px;
+  }
+  /* sponsors section */
+  .sponsors {
+    flex-direction: column;
+  }
+  .sponsors img {
+    transform: scale(.5);
   }
 }
 

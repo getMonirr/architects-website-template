@@ -169,7 +169,7 @@ body {
          experience-section --start--
 -------------------------------------------- */
 .experience-section {
-    margin-bottom: 130px;
+  margin-bottom: 130px;
 }
 .experience-wrapper {
   display: flex;
@@ -224,6 +224,41 @@ body {
 -------------------------------------------- */
 
 /* -----------------------------------------
+         some facts-section --start--
+-------------------------------------------- */
+.facts {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 100px;
+  margin-bottom: 180px;
+
+}
+.fact {
+  padding: 45px 35px;
+  border: 1px solid var(--primary-color);
+  border-radius: 8px;
+  text-align: center;
+  width: 240px;
+  height: 240px;
+}
+.fact .number {
+  font-weight: 600;
+  font-size: 45px;
+  line-height: 53px;
+  color: var(--dark-2);
+}
+.fact .description {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 23px;
+  color: var(--dark-3);
+}
+/* -----------------------------------------
+         some facts-section --end--
+-------------------------------------------- */
+
+/* -----------------------------------------
          Responsive area --start--
 -------------------------------------------- */
 /* for mobile device max-width: 576px or less */
@@ -273,6 +308,17 @@ body {
   .experience-btn {
     position: unset;
     margin-top: 50px;
+  }
+  /* facts section */
+  .facts-section {
+    text-align: center;
+    margin-top: 100px;
+  }
+  .facts {
+    flex-direction: column;
+    gap: 50px;
+    margin-top: 50px;
+    margin-bottom: 100px;
   }
 }
 

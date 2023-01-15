@@ -140,11 +140,11 @@ body {
   gap: 24px;
 }
 .features-image img {
-    width: 100%;
+  width: 100%;
 }
 .features-content {
-    width: 100%;
-    max-width: 530px;
+  width: 100%;
+  max-width: 530px;
 }
 .features-title {
   font-weight: 700;
@@ -158,11 +158,69 @@ body {
   color: var(--dark-3);
 }
 .features-title span:nth-of-type(2) {
-    color: var(--primary-color);
+  color: var(--primary-color);
 }
 
 /* -----------------------------------------
          features-section --end--
+-------------------------------------------- */
+
+/* -----------------------------------------
+         experience-section --start--
+-------------------------------------------- */
+.experience-section {
+    margin-bottom: 130px;
+}
+.experience-wrapper {
+  display: flex;
+  gap: 150px;
+  align-items: center;
+}
+.experience-content .features-title {
+  width: 100%;
+  max-width: 468px;
+  padding-left: 20px;
+  border-left: 5px solid var(--primary-color);
+}
+.experience-info-box {
+  padding: 30px;
+  box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.06);
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+.experience-info-box .hero-description {
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+/* for positioning */
+.experience-images {
+  position: relative;
+  text-align: center;
+}
+
+.experience-btn {
+  padding: 45px;
+  background-color: var(--primary-color);
+  border-radius: 8px;
+  border: 0;
+  font-weight: 700;
+  font-size: 65px;
+  line-height: 70px;
+  color: var(--white);
+  /* for positioning */
+  position: absolute;
+  bottom: -77px;
+  left: -92px;
+}
+.experience-btn span {
+  display: block;
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 40px;
+}
+
+/* -----------------------------------------
+         experience-section --end--
 -------------------------------------------- */
 
 /* -----------------------------------------
@@ -196,10 +254,25 @@ body {
     flex-direction: column;
   }
   .features-image {
-    grid-template-columns: repeat(1,1fr);
+    grid-template-columns: repeat(1, 1fr);
   }
   .features-content {
     text-align: center;
+  }
+  /* experience section */
+  .experience-section {
+    margin-bottom: 50px;
+  }
+  .experience-wrapper {
+    flex-direction: column;
+    gap: 50px;
+  }
+  .experience-images img {
+    width: 100%;
+  }
+  .experience-btn {
+    position: unset;
+    margin-top: 50px;
   }
 }
 
